@@ -2,7 +2,7 @@
 
 LedControl lc = LedControl(12, 11, 10, 1);
 
-int num[] = {0, 1, 2, 3, 4, 5, 6};
+int num1[] = {0, 1, 2, 3, 4, 5, 6};
 int pozice[] = {7, 5, 4, 3, 2, 1, 0};
 
 void setup()
@@ -25,9 +25,9 @@ void loop()
     {
         lc.setDigit(0, pozice[0], num[0], false);
         num++;
-    }
+    } přepni na pole 2
 
-    
+
 
  /*   lc.setDigit(0, 7, 0, false);
     lc.setChar(0, 6, '.', false);
