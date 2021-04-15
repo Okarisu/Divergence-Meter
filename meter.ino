@@ -12,7 +12,6 @@ SoftwareSerial bluetooth(TX, RX);
 void setup()
 {
     bluetooth.begin(9600);
-    bluetooth.println("Arduino zapnuto, test Bluetooth..");
 }
 
 void logic()
