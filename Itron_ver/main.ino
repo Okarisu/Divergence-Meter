@@ -15,35 +15,50 @@ bool power = false;
 
 bool divergence = false; //When true, divergence value is displayed. When false, current time is displayed.
 
-//shift register pinnout
-int registerLatchPin;
-int registerClockPin;
-int registerDataPin;
+//segment shift register pinnout
+int registerSegmentLatchPin;
+int registerSegmentClockPin;
+int registerSegmentDataPin;
+
+//grids shift register pinnout
+int registerGridLatchPin;
+int registerGridClockPin;
+int registerGridDataPin;
 
 
 //array with bytes to write through registers
-byte divergenceArray[16]; //16 bytes total are needed - 8 for itron segments and 8 for itron grids
-int divergenceArrayPosition = 0;
+byte divergenceArray[8]; //array with elements to display numbers
+byte divergenceGridArray[8]; //array with elements to power on itron grids
+int divergenceArrayPosition = 0; //variable for array element selection
+
+delayNumberChangeTime
 
 void setup()
 {
+    pinMode(registerSegmentLatchPin, OUTPUT);
+    pinMode(registerSegmentClockPin, OUTPUT);
+    pinMode(registerSegmentDataPin, OUTPUT);
 
+    pinMode(registerGridLatchPin, OUTPUT);
+    pinMode(registerGridClockPin, OUTPUT);
+    pinMode(registerGridDataPin, OUTPUT);
 
-
-
-
-
-    pinMode(registerLatchPin, OUTPUT);
-    pinMode(registerClockPin, OUTPUT);
-    pinMode(registerDataPin, OUTPUT);
 }
 
 void display()
 {
-    for(divergenceArrayPosition; divergenceArrayPosition < 16; divergenceArrayPosition++){
-    digitalWrite(registerLatchPin, LOW);
-    shiftOut(registerDataPin, registerClockPin, LSBFIRST, divergenceArray[divergenceArrayPosition]);
-    digitalWrite(registerLatchPin, HIGH);
+    for(divergenceArrayPosition; divergenceArrayPosition < 8; divergenceArrayPosition++){
+
+        digitalWrite(registerSegmentLatchPin, LOW);
+        digitalWrite(registerGridLatchPin, LOW);
+
+        shiftOut(registerSegmentDataPin, registerSegmentClockPin, LSBFIRST, divergenceArray[divergenceArrayPosition]);
+        shiftOut(registerGridDataPin, registerGridClockPin, LSBFIRST, divergenceGridArray[divergenceArrayPosition]);
+
+        digitalWrite(registerSegmentLatchPin, HIGH);
+        digitalWrite(registerGridLatchPin, HIGH);
+
+        delay(delayNumberChangeTime)
 }
 
 void divergence(){
