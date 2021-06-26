@@ -40,8 +40,9 @@ void setup()
 
 void display()
 {
+    for(divergenceArrayPosition; divergenceArrayPosition < 16; divergenceArrayPosition++){
     digitalWrite(registerLatchPin, LOW);
-    shiftOut(registerDataPin, registerClockPin, LSBFIRST, B10101010);
+    shiftOut(registerDataPin, registerClockPin, LSBFIRST, divergenceArray[divergenceArrayPosition]);
     digitalWrite(registerLatchPin, HIGH);
 }
 
