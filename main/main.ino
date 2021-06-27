@@ -53,7 +53,7 @@ void loop(){
     } else if (!divergence){
         time();
     }
-    
+
     display();
 }
 
@@ -73,9 +73,4 @@ void display()
 
         delay(delayNumberChangeTime);
     }
-}
-
-void divergence()
-{
-    divergenceArray[divergenceArrayPosition] = B01111111;
 }

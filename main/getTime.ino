@@ -1,3 +1,14 @@
+/*
+
+Function to assign specific bytes for shift register array
+depending on time sent from RTC.
+
+Switch takes current time from dateTime variable and based on its value,
+assigns specific byte to positions of an array.
+
+*/
+
+
 //variables to drive pins of shift register
 byte displayZero = B00000011;
 byte displayOne = B10011111;
@@ -17,11 +28,6 @@ DS3231 rtc;
 RTCDateTime dateTime;
 
 
-
-/*
-Function to assign specific bytes for shift register array
-depending on time sent from RTC.
-*/
 void getTime(){
 
     dateTime = rtc.getDateTime();
