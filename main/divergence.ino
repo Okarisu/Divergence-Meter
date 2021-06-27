@@ -1,4 +1,6 @@
 void divergence()
 {
-    divergenceArray[divergenceArrayPosition] = B01111111;
+    divergenceArray[1] = displayDot; //displaying dot on the second itron
+
+    
 }

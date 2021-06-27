@@ -29,9 +29,13 @@ int registerGridLatchPin;
 int registerGridClockPin;
 int registerGridDataPin;
 
-//array with bytes to write through registers
+/*arrays with bytes to write through registers*/
+
 byte divergenceArray[8]; //array with elements to display numbers
-byte divergenceGridArray[8]; //array with elements to power itron grids
+
+//array with elements to power itron grids; each array element represents one itron powered on
+byte divergenceGridArray[] = {B01111111, B10111111, B11011111, B11101111, B11110111, B11111011, B11111101, B11111110};
+
 int divergenceArrayPosition = 0; //variable for array element selection
 
 int delayNumberChangeTime = 10; //delay in ms to switch between powering itrons
@@ -51,7 +55,7 @@ void loop(){
     if(divergence){
         divergence();
     } else if (!divergence){
-        time();
+        getTime();
     }
 
     display();

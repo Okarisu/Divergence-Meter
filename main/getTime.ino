@@ -40,43 +40,43 @@ void getTime(){
         switch(dateTime.hour) {
 
             case 0:
-                divergenceArray[2] = displayZero;
+                divergenceArray[1] = displayZero;
                 break;
 
             case 1:
-                divergenceArray[2] = displayOne;
+                divergenceArray[1] = displayOne;
                 break;
             
             case 2:
-                divergenceArray[2] = displayTwo;
+                divergenceArray[1] = displayTwo;
                 break;
             
             case 3:
-                divergenceArray[2] = displayThree;
+                divergenceArray[1] = displayThree;
                 break;
 
             case 4:
-                divergenceArray[2] = displayFour;
+                divergenceArray[1] = displayFour;
                 break;
             
             case 5:
-                divergenceArray[2] = displayFive;
+                divergenceArray[1] = displayFive;
                 break;
             
             case 6:
-                divergenceArray[2] = displaySix;
+                divergenceArray[1] = displaySix;
                 break;
             
             case 7:
-                divergenceArray[2] = displaySeven;
+                divergenceArray[1] = displaySeven;
                 break;
 
             case 8:
-                divergenceArray[2] = displayEight;
+                divergenceArray[1] = displayEight;
                 break;
             
             case 9:
-                divergenceArray[2] = displayNine;
+                divergenceArray[1] = displayNine;
                 break;
         }
     } else if ((dateTime.hour >= 10) && (dateTime.hour <= 19)){
@@ -87,43 +87,43 @@ void getTime(){
 
 
             case 10:
-                divergenceArray[2] = displayZero;
+                divergenceArray[1] = displayZero;
                 break;
 
             case 11:
-                divergenceArray[2] = displayOne;
+                divergenceArray[1] = displayOne;
                 break;
 
             case 12:
-                divergenceArray[2] = displayTwo;
+                divergenceArray[1] = displayTwo;
                 break;
 
             case 13:
-                divergenceArray[2] = displayThree;
+                divergenceArray[1] = displayThree;
                 break;
 
             case 14:
-                divergenceArray[2] = displayFour;
+                divergenceArray[1] = displayFour;
                 break;
 
             case 15:
-                divergenceArray[2] = displayFive;
+                divergenceArray[1] = displayFive;
                 break;
 
             case 16:
-                divergenceArray[2] = displaySix;
+                divergenceArray[1] = displaySix;
                 break;
 
             case 17:
-                divergenceArray[2] = displaySeven;
+                divergenceArray[1] = displaySeven;
                 break;
 
             case 18:
-                divergenceArray[2] = displayEight;
+                divergenceArray[1] = displayEight;
                 break;
 
             case 19:
-                divergenceArray[2] = displayNine;
+                divergenceArray[1] = displayNine;
                 break;
         }
 
@@ -134,366 +134,366 @@ void getTime(){
         switch(dateTime.hour){
 
             case 20:
-                divergenceArray[2] = displayZero;
+                divergenceArray[1] = displayZero;
                 break;
 
             case 21:
-                divergenceArray[2] = displayOne;
+                divergenceArray[1] = displayOne;
                 break;
 
             case 22:
-                divergenceArray[2] = displayTwo;
+                divergenceArray[1] = displayTwo;
                 break;
 
             case 23:
-                divergenceArray[2] = displayThree;
+                divergenceArray[1] = displayThree;
                 break;
         }
 
     }
     //!GET HOUR
 
-    divergenceArray[4] = B11111101; //display '-' on the third itron
+    divergenceArray[2] = B11111101; //display '-' on the third itron
 
 
     //GET MINUTE
     if(dateTime.minute <= 9){
 
-        divergenceArray[6] = displayZero; //display 0 on the fourth itron
+        divergenceArray[3] = displayZero; //display 0 on the fourth itron
 
         switch(dateTime.minute) {
 
             case 0:
-                divergenceArray[8] = displayZero;
+                divergenceArray[4] = displayZero;
                 break;
 
             case 1:
-                divergenceArray[8] = displayOne;
+                divergenceArray[4] = displayOne;
                 break;
             
             case 2:
-                divergenceArray[8] = displayTwo;
+                divergenceArray[4] = displayTwo;
                 break;
             
             case 3:
-                divergenceArray[8] = displayThree;
+                divergenceArray[4] = displayThree;
                 break;
 
             case 4:
-                divergenceArray[8] = displayFour;
+                divergenceArray[4] = displayFour;
                 break;
             
             case 5:
-                divergenceArray[8] = displayFive;
+                divergenceArray[4] = displayFive;
                 break;
             
             case 6:
-                divergenceArray[8] = displaySix;
+                divergenceArray[4] = displaySix;
                 break;
             
             case 7:
-                divergenceArray[8] = displaySeven;
+                divergenceArray[4] = displaySeven;
                 break;
 
             case 8:
-                divergenceArray[8] = displayEight;
+                divergenceArray[4] = displayEight;
                 break;
             
             case 9:
-                divergenceArray[8] = displayNine;
+                divergenceArray[4] = displayNine;
                 break;
         }
     
     } else if ((dateTime.minute >= 10) && (dateTime.minute <= 19)){
 
-        divergenceArray[6] = displayOne; //display 1 on the fourth itron
+        divergenceArray[3] = displayOne; //display 1 on the fourth itron
 
         switch(dateTime.minute){
 
 
             case 10:
-                divergenceArray[8] = displayZero;
+                divergenceArray[4] = displayZero;
                 break;
 
             case 11:
-                divergenceArray[8] = displayOne;
+                divergenceArray[4] = displayOne;
                 break;
 
             case 12:
-                divergenceArray[8] = displayTwo;
+                divergenceArray[4] = displayTwo;
                 break;
 
             case 13:
-                divergenceArray[8] = displayThree;
+                divergenceArray[4] = displayThree;
                 break;
 
             case 14:
-                divergenceArray[8] = displayFour;
+                divergenceArray[4] = displayFour;
                 break;
 
             case 15:
-                divergenceArray[8] = displayFive;
+                divergenceArray[4] = displayFive;
                 break;
 
             case 16:
-                divergenceArray[8] = displaySix;
+                divergenceArray[4] = displaySix;
                 break;
 
             case 17:
-                divergenceArray[8] = displaySeven;
+                divergenceArray[4] = displaySeven;
                 break;
 
             case 18:
-                divergenceArray[8] = displayEight;
+                divergenceArray[4] = displayEight;
                 break;
 
             case 19:
-                divergenceArray[8] = displayNine;
+                divergenceArray[4] = displayNine;
                 break;
         }
     
     } else if ((dateTime.minute >= 20) && (dateTime.minute <= 29)){
 
-        divergenceArray[6] = displayTwo; //display 2 on the fourth itron
+        divergenceArray[3] = displayTwo; //display 2 on the fourth itron
 
         switch(dateTime.minute){
 
 
             case 20:
-                divergenceArray[8] = displayZero;
+                divergenceArray[4] = displayZero;
                 break;
 
             case 21:
-                divergenceArray[8] = displayOne;
+                divergenceArray[4] = displayOne;
                 break;
 
             case 22:
-                divergenceArray[8] = displayTwo;
+                divergenceArray[4] = displayTwo;
                 break;
 
             case 23:
-                divergenceArray[8] = displayThree;
+                divergenceArray[4] = displayThree;
                 break;
 
             case 24:
-                divergenceArray[8] = displayFour;
+                divergenceArray[4] = displayFour;
                 break;
 
             case 25:
-                divergenceArray[8] = displayFive;
+                divergenceArray[4] = displayFive;
                 break;
 
             case 26:
-                divergenceArray[8] = displaySix;
+                divergenceArray[4] = displaySix;
                 break;
 
             case 27:
-                divergenceArray[8] = displaySeven;
+                divergenceArray[4] = displaySeven;
                 break;
 
             case 28:
-                divergenceArray[8] = displayEight;
+                divergenceArray[4] = displayEight;
                 break;
 
             case 29:
-                divergenceArray[8] = displayNine;
+                divergenceArray[4] = displayNine;
                 break;
         }
     
     } else if ((dateTime.minute >= 30) && (dateTime.minute <= 39)){
 
-        divergenceArray[6] = displayThree; //display 3 on the fourth itron
+        divergenceArray[3] = displayThree; //display 3 on the fourth itron
 
         switch(dateTime.minute){
 
 
             case 30:
-                divergenceArray[8] = displayZero;
+                divergenceArray[4] = displayZero;
                 break;
 
             case 31:
-                divergenceArray[8] = displayOne;
+                divergenceArray[4] = displayOne;
                 break;
 
             case 32:
-                divergenceArray[8] = displayTwo;
+                divergenceArray[4] = displayTwo;
                 break;
 
             case 33:
-                divergenceArray[8] = displayThree;
+                divergenceArray[4] = displayThree;
                 break;
 
             case 34:
-                divergenceArray[8] = displayFour;
+                divergenceArray[4] = displayFour;
                 break;
 
             case 35:
-                divergenceArray[8] = displayFive;
+                divergenceArray[4] = displayFive;
                 break;
 
             case 36:
-                divergenceArray[8] = displaySix;
+                divergenceArray[4] = displaySix;
                 break;
 
             case 37:
-                divergenceArray[8] = displaySeven;
+                divergenceArray[4] = displaySeven;
                 break;
 
             case 38:
-                divergenceArray[8] = displayEight;
+                divergenceArray[4] = displayEight;
                 break;
 
             case 39:
-                divergenceArray[8] = displayNine;
+                divergenceArray[4] = displayNine;
                 break;
         }
 
     } else if ((dateTime.minute >= 40) && (dateTime.minute <= 49)){
 
-        divergenceArray[6] = displayFour; //display 4 on the fourth itron
+        divergenceArray[3] = displayFour; //display 4 on the fourth itron
 
         switch(dateTime.minute){
 
 
             case 40:
-                divergenceArray[8] = displayZero;
+                divergenceArray[4] = displayZero;
                 break;
 
             case 41:
-                divergenceArray[8] = displayOne;
+                divergenceArray[4] = displayOne;
                 break;
 
             case 42:
-                divergenceArray[8] = displayTwo;
+                divergenceArray[4] = displayTwo;
                 break;
 
             case 43:
-                divergenceArray[8] = displayThree;
+                divergenceArray[4] = displayThree;
                 break;
 
             case 44:
-                divergenceArray[8] = displayFour;
+                divergenceArray[4] = displayFour;
                 break;
 
             case 45:
-                divergenceArray[8] = displayFive;
+                divergenceArray[4] = displayFive;
                 break;
 
             case 46:
-                divergenceArray[8] = displaySix;
+                divergenceArray[4] = displaySix;
                 break;
 
             case 47:
-                divergenceArray[8] = displaySeven;
+                divergenceArray[4] = displaySeven;
                 break;
 
             case 48:
-                divergenceArray[8] = displayEight;
+                divergenceArray[4] = displayEight;
                 break;
 
             case 49:
-                divergenceArray[8] = displayNine;
+                divergenceArray[4] = displayNine;
                 break;
         }
 
     } else if ((dateTime.minute >= 50) && (dateTime.minute <= 59)){
 
-        divergenceArray[6] = displayFive; //display 5 on the fourth itron
+        divergenceArray[3] = displayFive; //display 5 on the fourth itron
 
         switch(dateTime.minute){
 
 
             case 50:
-                divergenceArray[8] = displayZero;
+                divergenceArray[4] = displayZero;
                 break;
 
             case 51:
-                divergenceArray[8] = displayOne;
+                divergenceArray[4] = displayOne;
                 break;
 
             case 52:
-                divergenceArray[8] = displayTwo;
+                divergenceArray[4] = displayTwo;
                 break;
 
             case 53:
-                divergenceArray[8] = displayThree;
+                divergenceArray[4] = displayThree;
                 break;
 
             case 54:
-                divergenceArray[8] = displayFour;
+                divergenceArray[4] = displayFour;
                 break;
 
             case 55:
-                divergenceArray[8] = displayFive;
+                divergenceArray[4] = displayFive;
                 break;
 
             case 56:
-                divergenceArray[8] = displaySix;
+                divergenceArray[4] = displaySix;
                 break;
 
             case 57:
-                divergenceArray[8] = displaySeven;
+                divergenceArray[4] = displaySeven;
                 break;
 
             case 58:
-                divergenceArray[8] = displayEight;
+                divergenceArray[4] = displayEight;
                 break;
 
             case 59:
-                divergenceArray[8] = displayNine;
+                divergenceArray[4] = displayNine;
                 break;
         }
     }
     //!GET MINUTE
 
-    divergenceArray[10] = B11111101; //display '-' on the sixth itron
+    divergenceArray[5] = B11111101; //display '-' on the sixth itron
 
 
     //GET SECOND
     if(dateTime.second <= 9){
 
-        divergenceArray[12] = displayZero; //display 0 on the seventh itron
+        divergenceArray[6] = displayZero; //display 0 on the seventh itron
 
         switch(dateTime.second) {
 
             case 0:
-                divergenceArray[14] = displayZero;
+                divergenceArray[7] = displayZero;
                 break;
 
             case 1:
-                divergenceArray[14] = displayOne;
+                divergenceArray[7] = displayOne;
                 break;
             
             case 2:
-                divergenceArray[14] = displayTwo;
+                divergenceArray[7] = displayTwo;
                 break;
             
             case 3:
-                divergenceArray[14] = displayThree;
+                divergenceArray[7] = displayThree;
                 break;
 
             case 4:
-                divergenceArray[14] = displayFour;
+                divergenceArray[7] = displayFour;
                 break;
             
             case 5:
-                divergenceArray[14] = displayFive;
+                divergenceArray[7] = displayFive;
                 break;
             
             case 6:
-                divergenceArray[14] = displaySix;
+                divergenceArray[7] = displaySix;
                 break;
             
             case 7:
-                divergenceArray[14] = displaySeven;
+                divergenceArray[7] = displaySeven;
                 break;
 
             case 8:
-                divergenceArray[14] = displayEight;
+                divergenceArray[7] = displayEight;
                 break;
             
             case 9:
-                divergenceArray[14] = displayNine;
+                divergenceArray[7] = displayNine;
                 break;
         }
     
@@ -505,43 +505,43 @@ void getTime(){
 
 
             case 10:
-                divergenceArray[14] = displayZero;
+                divergenceArray[7] = displayZero;
                 break;
 
             case 11:
-                divergenceArray[14] = displayOne;
+                divergenceArray[7] = displayOne;
                 break;
 
             case 12:
-                divergenceArray[14] = displayTwo;
+                divergenceArray[7] = displayTwo;
                 break;
 
             case 13:
-                divergenceArray[14] = displayThree;
+                divergenceArray[7] = displayThree;
                 break;
 
             case 14:
-                divergenceArray[14] = displayFour;
+                divergenceArray[7] = displayFour;
                 break;
 
             case 15:
-                divergenceArray[14] = displayFive;
+                divergenceArray[7] = displayFive;
                 break;
 
             case 16:
-                divergenceArray[14] = displaySix;
+                divergenceArray[7] = displaySix;
                 break;
 
             case 17:
-                divergenceArray[14] = displaySeven;
+                divergenceArray[7] = displaySeven;
                 break;
 
             case 18:
-                divergenceArray[14] = displayEight;
+                divergenceArray[7] = displayEight;
                 break;
 
             case 19:
-                divergenceArray[14] = displayNine;
+                divergenceArray[7] = displayNine;
                 break;
         }
     
@@ -553,43 +553,43 @@ void getTime(){
 
 
             case 20:
-                divergenceArray[14] = displayZero;
+                divergenceArray[7] = displayZero;
                 break;
 
             case 21:
-                divergenceArray[14] = displayOne;
+                divergenceArray[7] = displayOne;
                 break;
 
             case 22:
-                divergenceArray[14] = displayTwo;
+                divergenceArray[7] = displayTwo;
                 break;
 
             case 23:
-                divergenceArray[14] = displayThree;
+                divergenceArray[7] = displayThree;
                 break;
 
             case 24:
-                divergenceArray[14] = displayFour;
+                divergenceArray[7] = displayFour;
                 break;
 
             case 25:
-                divergenceArray[14] = displayFive;
+                divergenceArray[7] = displayFive;
                 break;
 
             case 26:
-                divergenceArray[14] = displaySix;
+                divergenceArray[7] = displaySix;
                 break;
 
             case 27:
-                divergenceArray[14] = displaySeven;
+                divergenceArray[7] = displaySeven;
                 break;
 
             case 28:
-                divergenceArray[14] = displayEight;
+                divergenceArray[7] = displayEight;
                 break;
 
             case 29:
-                divergenceArray[14] = displayNine;
+                divergenceArray[7] = displayNine;
                 break;
         }
     
@@ -601,43 +601,43 @@ void getTime(){
 
 
             case 30:
-                divergenceArray[14] = displayZero;
+                divergenceArray[7] = displayZero;
                 break;
 
             case 31:
-                divergenceArray[14] = displayOne;
+                divergenceArray[7] = displayOne;
                 break;
 
             case 32:
-                divergenceArray[14] = displayTwo;
+                divergenceArray[7] = displayTwo;
                 break;
 
             case 33:
-                divergenceArray[14] = displayThree;
+                divergenceArray[7] = displayThree;
                 break;
 
             case 34:
-                divergenceArray[14] = displayFour;
+                divergenceArray[7] = displayFour;
                 break;
 
             case 35:
-                divergenceArray[14] = displayFive;
+                divergenceArray[7] = displayFive;
                 break;
 
             case 36:
-                divergenceArray[14] = displaySix;
+                divergenceArray[7] = displaySix;
                 break;
 
             case 37:
-                divergenceArray[14] = displaySeven;
+                divergenceArray[7] = displaySeven;
                 break;
 
             case 38:
-                divergenceArray[14] = displayEight;
+                divergenceArray[7] = displayEight;
                 break;
 
             case 39:
-                divergenceArray[14] = displayNine;
+                divergenceArray[7] = displayNine;
                 break;
         }
 
@@ -649,43 +649,43 @@ void getTime(){
 
 
             case 40:
-                divergenceArray[14] = displayZero;
+                divergenceArray[7] = displayZero;
                 break;
 
             case 41:
-                divergenceArray[14] = displayOne;
+                divergenceArray[7] = displayOne;
                 break;
 
             case 42:
-                divergenceArray[14] = displayTwo;
+                divergenceArray[7] = displayTwo;
                 break;
 
             case 43:
-                divergenceArray[14] = displayThree;
+                divergenceArray[7] = displayThree;
                 break;
 
             case 44:
-                divergenceArray[14] = displayFour;
+                divergenceArray[7] = displayFour;
                 break;
 
             case 45:
-                divergenceArray[14] = displayFive;
+                divergenceArray[7] = displayFive;
                 break;
 
             case 46:
-                divergenceArray[14] = displaySix;
+                divergenceArray[7] = displaySix;
                 break;
 
             case 47:
-                divergenceArray[14] = displaySeven;
+                divergenceArray[7] = displaySeven;
                 break;
 
             case 48:
-                divergenceArray[14] = displayEight;
+                divergenceArray[7] = displayEight;
                 break;
 
             case 49:
-                divergenceArray[14] = displayNine;
+                divergenceArray[7] = displayNine;
                 break;
         }
 
@@ -697,43 +697,43 @@ void getTime(){
 
 
             case 50:
-                divergenceArray[14] = displayZero;
+                divergenceArray[7] = displayZero;
                 break;
 
             case 51:
-                divergenceArray[14] = displayOne;
+                divergenceArray[7] = displayOne;
                 break;
 
             case 52:
-                divergenceArray[14] = displayTwo;
+                divergenceArray[7] = displayTwo;
                 break;
 
             case 53:
-                divergenceArray[14] = displayThree;
+                divergenceArray[7] = displayThree;
                 break;
 
             case 54:
-                divergenceArray[14] = displayFour;
+                divergenceArray[7] = displayFour;
                 break;
 
             case 55:
-                divergenceArray[14] = displayFive;
+                divergenceArray[7] = displayFive;
                 break;
 
             case 56:
-                divergenceArray[14] = displaySix;
+                divergenceArray[7] = displaySix;
                 break;
 
             case 57:
-                divergenceArray[14] = displaySeven;
+                divergenceArray[7] = displaySeven;
                 break;
 
             case 58:
-                divergenceArray[14] = displayEight;
+                divergenceArray[7] = displayEight;
                 break;
 
             case 59:
-                divergenceArray[14] = displayNine;
+                divergenceArray[7] = displayNine;
                 break;
         }
     }
