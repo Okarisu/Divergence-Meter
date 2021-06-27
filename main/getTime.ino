@@ -1,71 +1,27 @@
-//libraries init
-#include <Wire.h>
-#include <DS3231.h>
+//variables to drive pins of shift register
+byte displayZero = B00000011;
+byte displayOne = B10011111;
+byte displayTwo = B00100101;
+byte displayThree = B00001101;
+byte displayFour = B10110001;
+byte displayFive = B01001001;
+byte displaySix = B01000001;
+byte displaySeven = B00011111;
+byte displayEight = B00000001;
+byte displayNine = B00001001;
+byte displayDot = B11111110;
+
 
 //RTC module variables
 DS3231 rtc;
 RTCDateTime dateTime;
 
-//RTC module pinnout
-int SCLpin = A5;
-int SDApin = A4;
 
 
-bool power = false;
-
-bool divergence = false; //When true, divergence value is displayed. When false, current time is displayed.
-
-//segment shift register pinnout
-int registerSegmentLatchPin;
-int registerSegmentClockPin;
-int registerSegmentDataPin;
-
-//grids shift register pinnout
-int registerGridLatchPin;
-int registerGridClockPin;
-int registerGridDataPin;
-
-
-//array with bytes to write through registers
-byte divergenceArray[8]; //array with elements to display numbers
-byte divergenceGridArray[8]; //array with elements to power on itron grids
-int divergenceArrayPosition = 0; //variable for array element selection
-
-delayNumberChangeTime
-
-void setup()
-{
-    pinMode(registerSegmentLatchPin, OUTPUT);
-    pinMode(registerSegmentClockPin, OUTPUT);
-    pinMode(registerSegmentDataPin, OUTPUT);
-
-    pinMode(registerGridLatchPin, OUTPUT);
-    pinMode(registerGridClockPin, OUTPUT);
-    pinMode(registerGridDataPin, OUTPUT);
-
-}
-
-void display()
-{
-    for(divergenceArrayPosition; divergenceArrayPosition < 8; divergenceArrayPosition++){
-
-        digitalWrite(registerSegmentLatchPin, LOW);
-        digitalWrite(registerGridLatchPin, LOW);
-
-        shiftOut(registerSegmentDataPin, registerSegmentClockPin, LSBFIRST, divergenceArray[divergenceArrayPosition]);
-        shiftOut(registerGridDataPin, registerGridClockPin, LSBFIRST, divergenceGridArray[divergenceArrayPosition]);
-
-        digitalWrite(registerSegmentLatchPin, HIGH);
-        digitalWrite(registerGridLatchPin, HIGH);
-
-        delay(delayNumberChangeTime)
-}
-
-void divergence(){
-divergenceArray[divergenceArrayPosition] = B01111111;
-
-}
-
+/*
+Function to assign specific bytes for shift register array
+depending on time sent from RTC.
+*/
 void getTime(){
 
     dateTime = rtc.getDateTime();
@@ -778,24 +734,3 @@ void getTime(){
     //!GET SECOND
 
 }
-
-byte displayZero = B00000011;
-byte displayOne = B10011111;
-byte displayTwo = B00100101;
-byte displayThree = B00001101;
-byte displayFour = B10110001;
-byte displayFive = B01001001;
-byte displaySix = B01000001;
-byte displaySeven = B00011111;
-byte displayEight = B00000001;
-byte displayNine = B00001001;
-byte displayDot = B11111110;
-
-byte onFirst = B01111111;
-byte onSecond = B10111111;
-byte onThird = B11011111;
-byte onFourth = B11101111;
-byte onFifth = B11110111;
-byte onSixth = B11111011;
-byte onSeventh = B11111101;
-byte onEight = B11111110;
