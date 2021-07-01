@@ -6,14 +6,14 @@
 int SCLpin = A5;
 int SDApin = A4;
 
-byte onFirst = B01111111;
-byte onSecond = B10111111;
-byte onThird = B11011111;
-byte onFourth = B11101111;
-byte onFifth = B11110111;
-byte onSixth = B11111011;
-byte onSeventh = B11111101;
-byte onEight = B11111110;
+first = B01111111;
+second = B10111111;
+third = B11011111;
+fourth = B11101111;
+fifth = B11110111;
+sixth = B11111011;
+seventh = B11111101;
+eighth = B11111110;
 
 bool power = false;
 

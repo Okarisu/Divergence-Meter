@@ -3,29 +3,23 @@
 Function to assign specific bytes for shift register array
 depending on time sent from RTC.
 
-Switch takes current time from dateTime variable and based on its value,
-assigns specific byte to positions of an array.
-
 */
 
 
 //variables to drive pins of shift register
-byte displayZero = B00000011;
-byte displayOne = B10011111;
-byte displayTwo = B00100101;
-byte displayThree = B00001101;
-byte displayFour = B10110001;
-byte displayFive = B01001001;
-byte displaySix = B01000001;
-byte displaySeven = B00011111;
-byte displayEight = B00000001;
-byte displayNine = B00001001;
+
 byte displayDot = B11111110;
+byte displayStroke = B11111101;
 
 
 byte timeDatabase[] = {
 
-    
+B00000011, B10011111,
+B00100101, B00001101,
+B10110001, B01001001,
+B01000001, B00011111,
+B00000001, B00001001
+
 }
 
 //RTC module variables
@@ -61,5 +55,7 @@ void getTime(){
 
     secondsF = seconds/10;
     secondsS = seconds%10;
+
+    divergenceArray[] = {timeDatabase[hoursF], timeDatabase[hoursS], displayStroke, timeDatabase[minutesF], timeDatabase[minutesS], displayStroke, timeDatabase[secondsF], timeDatabase[secondsS],}
 
 }
