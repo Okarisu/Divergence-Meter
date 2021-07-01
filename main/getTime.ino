@@ -45,13 +45,13 @@ void getTime(){
 
     hours = dateTime.hour;
     minutes = dateTime.minute;
-    second = dateTime.second;
+    seconds = dateTime.second;
 
     hoursF = hours/10;
     hoursS = hours%10;
 
     minutesF = minutes/10;
-    minutelS = minutes%10;
+    minutesS = minutes%10;
 
     secondsF = seconds/10;
     secondsS = seconds%10;

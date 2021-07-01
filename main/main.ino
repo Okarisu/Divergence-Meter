@@ -6,14 +6,6 @@
 int SCLpin = A5;
 int SDApin = A4;
 
-first = B01111111;
-second = B10111111;
-third = B11011111;
-fourth = B11101111;
-fifth = B11110111;
-sixth = B11111011;
-seventh = B11111101;
-eighth = B11111110;
 
 bool power = false;
 
