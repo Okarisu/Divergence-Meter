@@ -6,16 +6,7 @@
 int SCLpin = A5;
 int SDApin = A4;
 
-byte onFirst = B01111111;
-byte onSecond = B10111111;
-byte onThird = B11011111;
-byte onFourth = B11101111;
-byte onFifth = B11110111;
-byte onSixth = B11111011;
-byte onSeventh = B11111101;
-byte onEight = B11111110;
-
-bool power = false;
+bool power = true; //Switch variable - when false, nothing is being displayed
 
 bool divergence = false; //When true, divergence value is displayed. When false, current time is displayed.
 
@@ -42,6 +33,8 @@ int delayNumberChangeTime = 10; //delay in ms to switch between powering itrons
 
 void setup()
 {
+
+    /*setting all driving pins to OUTPUT from Arduino board*/
     pinMode(registerSegmentLatchPin, OUTPUT);
     pinMode(registerSegmentClockPin, OUTPUT);
     pinMode(registerSegmentDataPin, OUTPUT);
@@ -63,18 +56,25 @@ void loop(){
 
 void display()
 {
+
+    //cycle to go through all digits and display them 
     for (divergenceArrayPosition; divergenceArrayPosition < 8; divergenceArrayPosition++)
     {
 
+        //seting latch pins of both shift registers to LOW to be able to write data to them
         digitalWrite(registerSegmentLatchPin, LOW);
         digitalWrite(registerGridLatchPin, LOW);
 
-        shiftOut(registerSegmentDataPin, registerSegmentClockPin, LSBFIRST, divergenceArray[divergenceArrayPosition]);
-        shiftOut(registerGridDataPin, registerGridClockPin, LSBFIRST, divergenceGridArray[divergenceArrayPosition]);
+        //writing data to the shift registers
+        shiftOut(registerSegmentDataPin, registerSegmentClockPin, LSBFIRST, divergenceArray[divergenceArrayPosition]); //write digit to be displayed to the shift register driving itron segments
 
+        shiftOut(registerGridDataPin, registerGridClockPin, LSBFIRST, divergenceGridArray[divergenceArrayPosition]); //turning on the itron
+
+        //seting latch pins of both shift registers to HIGH to display the digit
         digitalWrite(registerSegmentLatchPin, HIGH);
         digitalWrite(registerGridLatchPin, HIGH);
 
+        //delay to get whole displaying process on certain frequency
         delay(delayNumberChangeTime);
     }
 }
