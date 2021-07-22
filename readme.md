@@ -8,7 +8,7 @@
 
 In this project I am trying to build working prototype of Divergence meter that appeared in Steins;Gate anime series and Visual novels.
 
-![Divergence meter](https://raw.githubusercontent.com/Okarisu/Divergence-Meter/rewrite-getTime/images/Divergence_Meter.webp)
+![Divergence meter](https://raw.githubusercontent.com/Okarisu/Divergence-Meter/main/images/Divergence_Meter.webp)
 
 I use arduino board in combination with shift registers SN74HC595N to drive itrons IV-6.
 
