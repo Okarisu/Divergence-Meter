@@ -22,8 +22,8 @@ void divergence()
 {
     divergenceArray[1] = displayDot; //displaying dot on the second itron for whole time
 
-    
-long firstDigit = random(0,2);
+    scramble();
+    long firstDigit = random(0,2);
     
 }
 
@@ -38,7 +38,9 @@ void scramble(){
     Note that random() function returns number from minimum to maximum-1, not maximum! For 9 elements in array (starting from 0)ka makes it random(0,10).
     */
 
-    for(int i = 0; i < repeatCycle; i++)
+    for(int i = 0; i < repeatCycle; i++){
 
     divergenceArray[] = {digitsDatabase[random(0,10), displayDot, digitsDatabase[random(0,10), digitsDatabase[random(0,10), digitsDatabase[random(0,10), digitsDatabase[random(0,10), digitsDatabase[random(0,10), digitsDatabase[random(0,10)];
+    
+    }
 }
