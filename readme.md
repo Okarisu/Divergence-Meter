@@ -40,7 +40,7 @@ I use arduino board in combination with shift registers SN74HC595N to drive itro
 | six | B01000001 |
 | seven | B00011111 |
 | eight | B00000001 |
-|nine | B00001001 |
+| nine | B00001001 |
 
 | symbol | byte value |
 | ------ | ---------- |

@@ -1,5 +1,0 @@
-ex. dateTime.hour=12
-
-array[] = {x, x, x, x, x, x, ...}
-
-write[0] = array[dateTime.hour]

@@ -6,11 +6,10 @@ depending on time sent from RTC.
 */
 
 
-//variables to drive pins of shift register
 
-byte displayDot = B11111110;
+
+//bytes database that getTime function takes data from 
 byte displayStroke = B11111101;
-
 
 byte timeDatabase[] = {
 
@@ -41,14 +40,16 @@ int secondsS;
 
 void getTime(){
 
-    dateTime = rtc.getDateTime();
+    dateTime = rtc.getDateTime(); //variable containing current time from RTC module
 
     hours = dateTime.hour;
     minutes = dateTime.minute;
     seconds = dateTime.second;
 
-    hoursF = hours/10;
-    hoursS = hours%10;
+    /*getting separate time numbers to display each of them on itrons*/
+
+    hoursF = hours/10; //first digit of hours
+    hoursS = hours%10; //second digit of hours
 
     minutesF = minutes/10;
     minutesS = minutes%10;
@@ -56,6 +57,6 @@ void getTime(){
     secondsF = seconds/10;
     secondsS = seconds%10;
 
-    divergenceArray[] = {timeDatabase[hoursF], timeDatabase[hoursS], displayStroke, timeDatabase[minutesF], timeDatabase[minutesS], displayStroke, timeDatabase[secondsF], timeDatabase[secondsS],}
+    divergenceArray[] = {timeDatabase[hoursF], timeDatabase[hoursS], displayStroke, timeDatabase[minutesF], timeDatabase[minutesS], displayStroke, timeDatabase[secondsF], timeDatabase[secondsS]};
 
 }
