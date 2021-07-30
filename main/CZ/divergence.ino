@@ -20,8 +20,10 @@ byte digitsDatabase[] = {
 
 void divergence()
 {
-
-    scramble();
+    if(scramble){
+        scramble();
+    }
+    
 
     //divergenceArray[1] = displayDot; //displaying dot on the second itron for whole time
 
@@ -47,4 +49,6 @@ void scramble(){
     display();
 
     }
+
+    scramble = false;
 }

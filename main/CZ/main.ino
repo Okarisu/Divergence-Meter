@@ -13,7 +13,7 @@ int SDApin = A4;
 
 bool power = true; //proměnná řídící přívod energie do itronů skrze relé
 bool divergence = false; //proměnná řídící, zda je zobrazován čas nebo světová linka
-bool scramble = false; //proměnnák zahájení cyklu 
+bool scramble = false; //proměnná k zahájení cyklu 
 
 /*nastavení pinů posuvných registrů*/
 
