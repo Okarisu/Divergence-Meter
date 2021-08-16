@@ -8,6 +8,7 @@ ________________.
 //bytes database that divergence function takes data from 
 
 byte displayDot = B11111110;
+byte divergenceDatabase[] = {};
 
 byte digitsDatabase[] = {
     B00000011, B10011111,
@@ -34,7 +35,7 @@ void divergence()
 void scramble(){
 
     float nSecondsScramble = 5; //čas, po kterýmá trvat prohazování číslic
-    int repeatCycle = round(nSecondsScramble*1000/(8*delayDigitChangeTime)) //přiblížný počet cyklů potřebných k naplnění délky tvání prohazování. Detaily v dokumentaci. 
+    int repeatCycle = round(nSecondsScramble*1000/(8*delayDigitChangeTime)) //přibližný počet cyklů potřebných k naplnění délky tvání prohazování. Detaily v dokumentaci. 
 
     /*
     Getting random number for each itron except of the second one
@@ -52,3 +53,19 @@ void scramble(){
 
     scramble = false;
 }
+
+void loadDiv(){
+
+  
+  int divergenceValue = divergenceDatabase[random(0,sizeof(divergenceDatabase)+1)];
+  int digit;
+
+  for(int i = 7; i >= 0; i--){
+      digit = divergenceValue % 10;
+      displayArray[i] = divergenceDatabase[digit];
+      divergenceValue = divergenceValue / 10;
+
+  }
+  
+  
+  }

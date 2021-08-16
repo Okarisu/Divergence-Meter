@@ -28,7 +28,6 @@ int registerGridClockPin;
 int registerGridDataPin;
 
 
-byte divergenceArray[8]; //pole obsahující číslice k zápisu do registu segmentů a následnému zobrazení
 
 int relayOutput; //pin s připojeným relé k zapínání/vypínání přívodu proudu k itronům
 
