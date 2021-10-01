@@ -19,4 +19,3 @@
 - eventually BT module
 - ev. speaker & SD card module
 - some electro-parts to be placed on the top of the PCB for design
- 
