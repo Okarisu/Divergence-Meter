@@ -1,6 +1,7 @@
 //inicializace knihoven
 #include <Wire.h>
-#include <DS3231.h>
+//#include <DS3231.h>
+#include "RTClib.h"
 
 /*
 | PROMĚNNÉ |

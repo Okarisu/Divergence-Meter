@@ -1,21 +1,14 @@
 //inicializace knihoven
 #include <Wire.h>
-#include <DS3231.h>
-
-
-/*
-| PROMĚNNÉ |
-*/
+//#include <DS3231.h>
 
 //nastavení pinů RTC modulu
 int SCLpin = A5;
 int SDApin = A4;
 
-bool power = true; //proměnná řídící přívod energie do itronů skrze relé
-bool divergence = false; //proměnná řídící, zda je zobrazován čas nebo světová linka
-bool scramble = false; //proměnná k zahájení cyklu 
-
-/*nastavení pinů posuvných registrů*/
+bool power = false;
+bool divergence = false;
+bool scramble = false;
 
 //regist řídící segmenty itronů
 int registerSegmentLatchPin;
@@ -27,16 +20,12 @@ int registerGridLatchPin;
 int registerGridClockPin;
 int registerGridDataPin;
 
-
-
 int relayOutput; //pin s připojeným relé k zapínání/vypínání přívodu proudu k itronům
-
-
 
 void setup()
 {
-
-    /*nastavení všech potřebných pinů na OUTPUT*/
+    pinMode(SCLpin, INPUT);
+    pinMode(SDApin, INPUT);
 
     pinMode(registerSegmentLatchPin, OUTPUT);
     pinMode(registerSegmentClockPin, OUTPUT);
@@ -49,22 +38,23 @@ void setup()
     pinMode(relayOutput, OUTPUT);
 }
 
-void loop(){
-
-
-    if (power){
+void loop()
+{
+    if (power)
+    {
         digitalWrite(relayOutput, HIGH); //zapnutí itronů
 
-        if(divergence){
+        if (divergence)
+        {
             divergence();
-        } else if (!divergence){
+        }
+        else if (!divergence)
+        {
             getTime();
-        } 
-
-       
-
-    } else {
+        }
+    }
+    else
+    {
         digitalWrite(relayOutput, LOW); //vypnutí itronů
     }
-
 }

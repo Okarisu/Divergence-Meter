@@ -1,59 +1,48 @@
-/*
-Function to assign specific bytes for shift register array
-depending on time sent from RTC.
-*/
+#include "RTClib.h"
 
-//RTC module variables
-DS3231 rtc;
-RTCDateTime dateTime;
+RTC_DS3231 rtc;
 
-
-int hours;
-int minutes;
-int seconds;
-
-int hoursF;
-int hoursS;
-int minutesF;
-int minutelS;
-int secondsF;
-int secondsS;
-
-
-void getTime(){
-
-    //bytes database that getTime function takes data from 
+void getTime()
+{
     byte displayStroke = B11111101;
 
     byte timeDatabase[] = {
 
-    B00000011, B10011111,
-    B00100101, B00001101,
-    B10110001, B01001001,
-    B01000001, B00011111,
-    B00000001, B00001001
+        B00000011, B10011111,
+        B00100101, B00001101,
+        B10110001, B01001001,
+        B01000001, B00011111,
+        B00000001, B00001001
 
     };
 
+    int hours;
+    int minutes;
+    int seconds;
 
-    dateTime = rtc.getDateTime(); //variable containing current time from RTC module
+    int hours1;
+    int hoursS;
+    int minutes1;
+    int minutes2;
+    int seconds1;
+    int seconds2;
 
-    hours = dateTime.hour;
-    minutes = dateTime.minute;
-    seconds = dateTime.second;
+    DateTime now = rtc.now();
 
-    /*getting separate time numbers to display each of them on itrons*/
+    hours = now.hour();
+    minutes = now.minute();
+    seconds = now.second();
 
-    hoursF = hours/10; //first digit of hours
-    hoursS = hours%10; //second digit of hours
+    hours1 = hours / 10;
+    hours2 = hours % 10;
 
-    minutesF = minutes/10;
-    minutesS = minutes%10;
+    minutes1 = minutes / 10;
+    minutes2 = minutes % 10;
 
-    secondsF = seconds/10;
-    secondsS = seconds%10;
+    seconds1 = seconds / 10;
+    seconds2 = seconds % 10;
 
-    divergenceArray[] = {timeDatabase[hoursF], timeDatabase[hoursS], displayStroke, timeDatabase[minutesF], timeDatabase[minutesS], displayStroke, timeDatabase[secondsF], timeDatabase[secondsS]};
+    divergenceArray[] = {timeDatabase[hours1], timeDatabase[hours2], displayStroke, timeDatabase[minutes1], timeDatabase[minutes2], displayStroke, timeDatabase[seconds1], timeDatabase[seconds2]};
 
     display();
 }
