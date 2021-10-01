@@ -22,4 +22,5 @@
 
 ## Poznámky od Franty
 
- - řádově pár mA - můžu použít ten svůj zdroj 
+- řádově pár mA - můžu použít ten svůj zdroj
+- problém display_array[]

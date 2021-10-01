@@ -7,54 +7,54 @@ int SCLpin = A5;
 int SDApin = A4;
 
 bool power = false;
-bool divergence = false;
-bool scramble = false;
+bool show_divergence = false;
+bool do_scramble = false;
 
 //regist řídící segmenty itronů
-int registerSegmentLatchPin;
-int registerSegmentClockPin;
-int registerSegmentDataPin;
+int register_segment_latch_pin;
+int register_segment_clock_pin;
+int register_segment_data_pin;
 
 //registr řídící mřížky itronů
-int registerGridLatchPin;
-int registerGridClockPin;
-int registerGridDataPin;
+int register_grid_latch_pin;
+int register_grid_clock_pin;
+int register_grid_data_pin;
 
-int relayOutput; //pin s připojeným relé k zapínání/vypínání přívodu proudu k itronům
+int relay_output; //pin s připojeným relé k zapínání/vypínání přívodu proudu k itronům
 
 void setup()
 {
     pinMode(SCLpin, INPUT);
     pinMode(SDApin, INPUT);
 
-    pinMode(registerSegmentLatchPin, OUTPUT);
-    pinMode(registerSegmentClockPin, OUTPUT);
-    pinMode(registerSegmentDataPin, OUTPUT);
+    pinMode(register_segment_latch_pin, OUTPUT);
+    pinMode(register_segment_clock_pin, OUTPUT);
+    pinMode(register_segment_data_pin, OUTPUT);
 
-    pinMode(registerGridLatchPin, OUTPUT);
-    pinMode(registerGridClockPin, OUTPUT);
-    pinMode(registerGridDataPin, OUTPUT);
+    pinMode(register_grid_latch_pin, OUTPUT);
+    pinMode(register_grid_clock_pin, OUTPUT);
+    pinMode(register_grid_data_pin, OUTPUT);
 
-    pinMode(relayOutput, OUTPUT);
+    pinMode(relay_output, OUTPUT);
 }
 
 void loop()
 {
     if (power)
     {
-        digitalWrite(relayOutput, HIGH); //zapnutí itronů
+        digitalWrite(relay_output, HIGH); //zapnutí itronů
 
-        if (divergence)
+        if (show_divergence)
         {
             divergence();
         }
-        else if (!divergence)
+        else
         {
             getTime();
         }
     }
     else
     {
-        digitalWrite(relayOutput, LOW); //vypnutí itronů
+        digitalWrite(relay_output, LOW); //vypnutí itronů
     }
 }
