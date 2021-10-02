@@ -1,11 +1,9 @@
-//public variables
 int digit_change_time_delay = 10; //čas v ms, po který budou jednotlivé itrony zobrazovat číslice
 
 byte display_array[8]; //pole obsahující číslice k zápisu do registu segmentů a následnému zobrazení
 
 void display()
 {
-    
 
     byte power_grid_array[] = {B01111111, B10111111, B11011111, B11101111, B11110111, B11111011, B11111101, B11111110};
 

@@ -1,4 +1,4 @@
-byte displayDot = B11111110;
+byte dot_byte = B11111110;
 byte divergence_database[] = {};
 
 byte digits_database[] = {
@@ -21,13 +21,13 @@ void divergence()
 void scramble()
 {
 
-    int n_seconds_scramble = 5; //čas, po kterýmá trvat prohazování číslic
+    int n_seconds_scramble = 5;                                                          //čas, po kterýmá trvat prohazování číslic
     int repeat_cycle = round(n_seconds_scramble * 1000 / (8 * digit_change_time_delay)); //přibližný počet cyklů potřebných k naplnění délky tvání prohazování. Detaily v dokumentaci.
 
     for (int i = 0; i < repeat_cycle; i++)
     {
-    display_array[] = {digits_database[random(0,10)], displayDot, digits_database[random(0,10)], digits_database[random(0,10)], digits_database[random(0,10)], digits_database[random(0,10)], digits_database[random(0,10)], digits_database[random(0,10)]};
-    display();
+        display_array[] = {digits_database[random(0, 10)], dot_byte, digits_database[random(0, 10)], digits_database[random(0, 10)], digits_database[random(0, 10)], digits_database[random(0, 10)], digits_database[random(0, 10)], digits_database[random(0, 10)]};
+        display();
     }
 
     scramble = false;

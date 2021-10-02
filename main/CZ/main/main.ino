@@ -48,7 +48,7 @@ void setup()
 
 
 
-    bluetooth.begin(9600);
+//    bluetooth.begin(9600);
 
 }
 
@@ -70,6 +70,6 @@ void loop()
     }
     else
     {
-        digitalWrite(relay_output, LOW); //vypnutí itronů
+        digitalWrite(relay_output_pin, LOW); //vypnutí itronů
     }
 }
