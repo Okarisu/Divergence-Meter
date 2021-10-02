@@ -21,10 +21,10 @@ void divergence()
 void scramble()
 {
 
-    float nSecondsScramble = 5; //čas, po kterýmá trvat prohazování číslic
-    int repeatCycle = round(nSecondsScramble * 1000 / (8 * delayDigitChangeTime)); //přibližný počet cyklů potřebných k naplnění délky tvání prohazování. Detaily v dokumentaci.
+    int n_seconds_scramble = 5; //čas, po kterýmá trvat prohazování číslic
+    int repeat_cycle = round(n_seconds_scramble * 1000 / (8 * digit_change_time_delay)); //přibližný počet cyklů potřebných k naplnění délky tvání prohazování. Detaily v dokumentaci.
 
-    for (int i = 0; i < repeatCycle; i++)
+    for (int i = 0; i < repeat_cycle; i++)
     {
     display_array[] = {digits_database[random(0,10)], displayDot, digits_database[random(0,10)], digits_database[random(0,10)], digits_database[random(0,10)], digits_database[random(0,10)], digits_database[random(0,10)], digits_database[random(0,10)]};
     display();

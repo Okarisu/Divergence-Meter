@@ -1,5 +1,5 @@
 //public variables
-int delayDigitChangeTime = 10; //čas v ms, po který budou jednotlivé itrony zobrazovat číslice
+int digit_change_time_delay = 10; //čas v ms, po který budou jednotlivé itrony zobrazovat číslice
 
 byte display_array[8]; //pole obsahující číslice k zápisu do registu segmentů a následnému zobrazení
 
@@ -23,6 +23,6 @@ void display()
         digitalWrite(register_segment_latch_pin, HIGH);
         digitalWrite(register_grid_latch_pin, HIGH);
 
-        delay(delayDigitChangeTime);
+        delay(digit_change_time_delay);
     }
 }

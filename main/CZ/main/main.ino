@@ -20,7 +20,12 @@ int register_grid_latch_pin;
 int register_grid_clock_pin;
 int register_grid_data_pin;
 
-int relay_output; //pin s připojeným relé k zapínání/vypínání přívodu proudu k itronům
+int relay_output_pin; //pin s připojeným relé k zapínání/vypínání přívodu proudu k itronům
+
+int power_switch_pin;
+int display_switch_pin;
+int scramble_switch_pin;
+
 
 void setup()
 {
@@ -35,14 +40,23 @@ void setup()
     pinMode(register_grid_clock_pin, OUTPUT);
     pinMode(register_grid_data_pin, OUTPUT);
 
-    pinMode(relay_output, OUTPUT);
+    pinMode(relay_output_pin, OUTPUT);
+
+    pinMode(power_switch_pin, INPUT_PULLUP);
+    pinMode(display_switch_pin, INPUT_PULLUP);
+    pinMode(scramble_switch_pin, INPUT_PULLUP);
+
+
+
+    bluetooth.begin(9600);
+
 }
 
 void loop()
 {
     if (power)
     {
-        digitalWrite(relay_output, HIGH); //zapnutí itronů
+        digitalWrite(relay_output_pin, HIGH); //zapnutí itronů
 
         if (show_divergence)
         {
@@ -51,6 +65,7 @@ void loop()
         else
         {
             getTime();
+            do_scramble = true;
         }
     }
     else
