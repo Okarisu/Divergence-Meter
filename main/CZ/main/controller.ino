@@ -1,9 +1,10 @@
 #include <SoftwareSerial.h>
+#include "HC05.h"
 
 #define RX 10;
 #define TX 11;
 
-SoftwareSerial bluetooth(TX, RX);
+//SoftwareSerial bluetooth(TX, RX);
 
 void switches()
 {

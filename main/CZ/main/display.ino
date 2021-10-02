@@ -9,7 +9,7 @@ void display()
 
     int display_array_position = 0;
 
-    //cyklus, kreý projde všechna čísla uložená v poli displayArray a postupně je zobrazí
+    //cyklus, který projde všechna čísla uložená v poli displayArray a postupně je zobrazí
     for (display_array_position; display_array_position < 8; display_array_position += 1)
     {
         digitalWrite(register_segment_latch_pin, LOW);
