@@ -1,10 +1,12 @@
 #include <SoftwareSerial.h>
-#include "HC05.h"
+//#include "HC05.h"
 
-#define RX 10;
-#define TX 11;
+//#define RX 2;
+//#define TX 3;
 
-//SoftwareSerial bluetooth(TX, RX);
+SoftwareSerial bluetooth(2, 3);
+
+byte bluetooth_input;
 
 void switches()
 {
@@ -47,12 +49,10 @@ void switches()
     }
 }
 
-void bluetooth()
+void bluetoothFce()
 {
 
-    byte bluetooth_input;
-
-    if (bluetooth.available() > 0)
+    if (bluetooth.available())
     {
 
         bluetooth_input = bluetooth.read();

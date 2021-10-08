@@ -1,5 +1,5 @@
 byte dot_byte = B11111110;
-byte divergence_database[] = {};
+int divergence_database[] = {10000000, 1234567};
 
 byte digits_database[] = {
     B00000011, B10011111,
@@ -12,13 +12,13 @@ void divergence()
 {
     if (do_scramble)
     {
-        scramble();
+        scrambleFce();
     }
 
     load_divergence();
 }
 
-void scramble()
+void scrambleFce()
 {
 
     int n_seconds_scramble = 5;                                                          //čas, po kterýmá trvat prohazování číslic
@@ -26,23 +26,31 @@ void scramble()
 
     for (int i = 0; i < repeat_cycle; i++)
     {
-        display_array[] = {digits_database[random(0, 10)], dot_byte, digits_database[random(0, 10)], digits_database[random(0, 10)], digits_database[random(0, 10)], digits_database[random(0, 10)], digits_database[random(0, 10)], digits_database[random(0, 10)]};
+        display_array[0] = {digits_database[random(0, 10)]};
+        display_array[1] = {dot_byte};
+        display_array[2] = {digits_database[random(0, 10)]};
+        display_array[3] = {digits_database[random(0, 10)]};
+        display_array[4] = {digits_database[random(0, 10)]};
+        display_array[5] = {digits_database[random(0, 10)]};
+        display_array[6] = {digits_database[random(0, 10)]};
+        display_array[7] = {digits_database[random(0, 10)]};
         display();
     }
 
-    scramble = false;
+    do_scramble = false;
 }
 
 void load_divergence()
 {
 
-    int divergenceValue = divergence_database[random(0, divergence_database.length() + 1)];
+    // int divergenceValue = divergence_database[random(0, divergence_database.length())];
+    int divergenceValue = divergence_database[random(0, sizeof(divergence_database))];
     int digit;
 
     for (int i = 7; i >= 0; i -= 1)
     {
         digit = divergenceValue % 10;
-        display_array[i] = divergence_database[digit];
+        display_array[i] = digits_database[digit];
         divergenceValue = divergenceValue / 10;
     }
 }
