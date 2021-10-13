@@ -26,7 +26,6 @@ int power_switch_pin;
 int display_switch_pin;
 int scramble_switch_pin;
 
-
 void setup()
 {
     pinMode(SCLpin, INPUT);
@@ -46,10 +45,7 @@ void setup()
     pinMode(display_switch_pin, INPUT_PULLUP);
     pinMode(scramble_switch_pin, INPUT_PULLUP);
 
-
-
-//    bluetooth.begin(9600);
-
+    //    bluetooth.begin(9600);
 }
 
 void loop()

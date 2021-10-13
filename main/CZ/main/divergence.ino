@@ -26,14 +26,14 @@ void scrambleFce()
 
     for (int i = 0; i < repeat_cycle; i++)
     {
-        display_array[0] = {digits_database[random(0, 10)]};
-        display_array[1] = {dot_byte};
-        display_array[2] = {digits_database[random(0, 10)]};
-        display_array[3] = {digits_database[random(0, 10)]};
-        display_array[4] = {digits_database[random(0, 10)]};
-        display_array[5] = {digits_database[random(0, 10)]};
-        display_array[6] = {digits_database[random(0, 10)]};
-        display_array[7] = {digits_database[random(0, 10)]};
+        display_array[0] = digits_database[random(0, 10)];
+        display_array[1] = dot_byte;
+        display_array[2] = digits_database[random(0, 10)];
+        display_array[3] = digits_database[random(0, 10)];
+        display_array[4] = digits_database[random(0, 10)];
+        display_array[5] = digits_database[random(0, 10)];
+        display_array[6] = digits_database[random(0, 10)];
+        display_array[7] = digits_database[random(0, 10)];
         display();
     }
 
