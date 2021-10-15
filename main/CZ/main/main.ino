@@ -7,20 +7,20 @@
 #define SDApin = A4;
 
 //regist řídící segmenty itronů
-#define register_segment_latch_pin ;
-#define register_segment_clock_pin ;
-#define register_segment_data_pin ;
+#define registerSegmentLatchPin ;
+#define registerSegmentDataPin ;
+#define registerSegmentClockPin ;
 
 //registr řídící mřížky itronů
-#define register_grid_latch_pin ;
-#define register_grid_clock_pin ;
-#define register_grid_data_pin ;
+#define registerGridLatchPin ;
+#define registerGridDataPin ;
+#define registerGridClockPin ;
 
-#define relay_output_pin ; //pin s připojeným relé k zapínání/vypínání přívodu proudu k itronům
+#define relayOutputPin ; //pin s připojeným relé k zapínání/vypínání přívodu proudu k itronům
 
-#define power_switch_pin ;
-#define display_switch_pin ;
-#define scramble_switch_pin ;
+#define powerSwitchPin ;
+#define displaySwitchPin ;
+#define scrambleSwitchPin ;
 
 bool power = false;
 bool show_divergence = false;
@@ -31,19 +31,19 @@ void setup()
     pinMode(SCLpin, INPUT);
     pinMode(SDApin, INPUT);
 
-    pinMode(register_segment_latch_pin, OUTPUT);
-    pinMode(register_segment_clock_pin, OUTPUT);
-    pinMode(register_segment_data_pin, OUTPUT);
+    pinMode(registerSegmentLatchPin, OUTPUT);
+    pinMode(registerSegmentDataPin, OUTPUT);
+    pinMode(registerSegmentClockPin, OUTPUT);
 
-    pinMode(register_grid_latch_pin, OUTPUT);
-    pinMode(register_grid_clock_pin, OUTPUT);
-    pinMode(register_grid_data_pin, OUTPUT);
+    pinMode(registerGridLatchPin, OUTPUT);
+    pinMode(registerGridDataPin, OUTPUT);
+    pinMode(registerGridClockPin, OUTPUT);
 
-    pinMode(relay_output_pin, OUTPUT);
+    pinMode(relayOutputPin, OUTPUT);
 
-    pinMode(power_switch_pin, INPUT_PULLUP);
-    pinMode(display_switch_pin, INPUT_PULLUP);
-    pinMode(scramble_switch_pin, INPUT_PULLUP);
+    pinMode(powerSwitchPin, INPUT_PULLUP);
+    pinMode(displaySwitchPin, INPUT_PULLUP);
+    pinMode(scrambleSwitchPin, INPUT_PULLUP);
 
     //    bluetooth.begin(9600);
 }
@@ -52,20 +52,20 @@ void loop()
 {
     if (power)
     {
-        digitalWrite(relay_output_pin, HIGH); //zapnutí itronů
+        digitalWrite(relayOutputPin, HIGH); //zapnutí itronů
 
         if (show_divergence)
         {
-            divergence();
+            divergenceFunction();
         }
         else
         {
-            getTime();
+            getTimeFunction();
             do_scramble = true;
         }
     }
     else
     {
-        digitalWrite(relay_output_pin, LOW); //vypnutí itronů
+        digitalWrite(relayOutputPin, LOW); //vypnutí itronů
     }
 }

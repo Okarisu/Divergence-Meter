@@ -2,9 +2,9 @@
 
 RTC_DS3231 rtc;
 
-void getTime()
+void getTimeFunction()
 {
-    byte displayStroke = B11111101;
+    byte strokeSymbol = B11111101;
 
     byte time_database[] = {
 
@@ -44,12 +44,12 @@ void getTime()
 
     display_array[0] = time_database[hoursOne];
     display_array[1] = time_database[hoursTwo];
-    display_array[2] = displayStroke;
+    display_array[2] = strokeSymbol;
     display_array[3] = time_database[minutesOne];
     display_array[4] = time_database[minutesTwo];
-    display_array[5] = displayStroke;
+    display_array[5] = strokeSymbol;
     display_array[6] = time_database[secondsOne];
     display_array[6] = time_database[secondsTwo];
 
-    display();
+    displayFunction();
 }
