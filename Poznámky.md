@@ -24,3 +24,8 @@
 
 - řádově pár mA - můžu použít ten svůj zdroj
 - problém display_array[]
+
+## Nápady
+
+- switch pro enable/disable bluetooth
+- možnost vlastního čísla

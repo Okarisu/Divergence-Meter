@@ -1,12 +1,10 @@
 #include <SoftwareSerial.h>
 //#include "HC05.h"
 
-//#define RX 2;
-//#define TX 3;
+#define RX 2;
+#define TX 3;
 
-SoftwareSerial bluetooth(2, 3);
-
-byte bluetooth_input;
+SoftwareSerial bluetooth(TX, RX);
 
 void switches()
 {
@@ -49,6 +47,8 @@ void switches()
     }
 }
 
+byte bluetooth_input;
+
 void bluetoothFce()
 {
 
@@ -59,33 +59,89 @@ void bluetoothFce()
 
         switch (bluetooth_input)
         {
+            //help
+        case 'h':
+            bluetooth.println("p - switch power");
+            bluetooth.println("1 - power ON");
+            bluetooth.println("0 - power OFF");
+            bluetooth.println("0 - power OFF");
+            bluetooth.println("d - show divergence");
+            bluetooth.println("t - show time");
+            bluetooth.println("s - scramble");
+            bluetooth.println("f - system stats - BT");
+            bluetooth.println("\f - system stats - serial");
+            bluetooth.println("h - help");
+            break;
 
         //power
-        case 'pwr':
+        case 'p':
             power = !power;
+            bluetooth.print("Power switched. ");
+            if (power)
+            {
+                bluetooth.println("Power ON.");
+            }
+            else
+            {
+                bluetooth.println("Power OFF.");
+            }
             break;
-        case 'on':
+        case '1':
             power = true;
+            bluetooth.println("Power ON.");
             break;
-        case 'off':
+        case '0':
             power = false;
+            bluetooth.println("Power OFF.");
             break;
 
         //div || time
-        case 'div':
+        case 'd':
             show_divergence = true;
             break;
-        case 'time':
+        case 't':
             show_divergence = false;
             break;
 
         //scramble
-        case 'scramble':
+        case 's':
             do_scramble = true;
+            break;
+        case 'f':
+            float runtimeSeconds = millis() / 1000;
+
+            bluetooth.print("Temperature: ");
+            bluetooth.print(rtc.getTemperature());
+            bluetooth.println(" C");
+            bluetooth.println("--------");
+            bluetooth.print("System runtime: ");
+            bluetooth.print(runtimeSeconds / 60);
+            bluetooth.print(" minutes - aprox ");
+            bluetooth.print(runtimeSeconds / 3600);
+            bluetooth.print(" hours - aprox ");
+            bluetooth.print(runtimeSeconds / 86400);
+            bluetooth.print(" days.");
+
+            break;
+        case '\f':
+            float runtimeSeconds = millis() / 1000;
+
+            Serial.print("Temperature: ");
+            Serial.print(rtc.getTemperature());
+            Serial.println(" C");
+            Serial.println("--------");
+            Serial.print("System runtime: ");
+            Serial.print(runtimeSeconds / 60);
+            Serial.print(" minutes - aprox ");
+            Serial.print(runtimeSeconds / 3600);
+            Serial.print(" hours - aprox ");
+            Serial.print(runtimeSeconds / 86400);
+            Serial.print(" days.");
+
             break;
 
         default:
-            bluetooth.println("Illegal argument");
+            bluetooth.println("ILLEGAL ARGUMENT");
         }
     }
     delay(10);

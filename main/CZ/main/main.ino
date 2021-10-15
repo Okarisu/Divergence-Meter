@@ -3,28 +3,28 @@
 //#include <DS3231.h>
 
 //nastavení pinů RTC modulu
-int SCLpin = A5;
-int SDApin = A4;
+#define SCLpin = A5;
+#define SDApin = A4;
+
+//regist řídící segmenty itronů
+#define register_segment_latch_pin ;
+#define register_segment_clock_pin ;
+#define register_segment_data_pin ;
+
+//registr řídící mřížky itronů
+#define register_grid_latch_pin ;
+#define register_grid_clock_pin ;
+#define register_grid_data_pin ;
+
+#define relay_output_pin ; //pin s připojeným relé k zapínání/vypínání přívodu proudu k itronům
+
+#define power_switch_pin ;
+#define display_switch_pin ;
+#define scramble_switch_pin ;
 
 bool power = false;
 bool show_divergence = false;
 bool do_scramble = false;
-
-//regist řídící segmenty itronů
-int register_segment_latch_pin;
-int register_segment_clock_pin;
-int register_segment_data_pin;
-
-//registr řídící mřížky itronů
-int register_grid_latch_pin;
-int register_grid_clock_pin;
-int register_grid_data_pin;
-
-int relay_output_pin; //pin s připojeným relé k zapínání/vypínání přívodu proudu k itronům
-
-int power_switch_pin;
-int display_switch_pin;
-int scramble_switch_pin;
 
 void setup()
 {
