@@ -20,7 +20,7 @@ void setup() {
     // a to pomocí funkce shiftOut,
     // která po bitu odešle do registru
     // hodnotu b10101010
-    shiftOut(dataPin, clockPin, LSBFIRST, B11100000);
+    shiftOut(dataPin, clockPin, LSBFIRST, B11111111);
     // MSBFIRS - znamená v jakém pořádí odesílá bity
     // v tomto případě první bit je jednička
     // a v registru se objeví až na konci,
@@ -34,4 +34,3 @@ void setup() {
  
 void loop() {
    }
-

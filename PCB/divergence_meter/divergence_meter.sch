@@ -1,0 +1,225 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L KiCad_CustomLib_Toohka:Itron_IV-6 Itron_IV-61
+U 1 1 6175150A
+P 4050 4300
+F 0 "Itron_IV-61" H 4444 4346 50  0000 L CNN
+F 1 "Itron_IV-6" H 4444 4255 50  0000 L CNN
+F 2 "" H 4550 4800 50  0001 C CNN
+F 3 "" H 4550 4800 50  0001 C CNN
+	1    4050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Counter_Clockwise J_R1
+U 1 1 61752B4F
+P 5150 3050
+F 0 "J_R1" H 5200 3567 50  0000 C CNN
+F 1 "Shift register" H 5200 3476 50  0000 C CNN
+F 2 "" H 5150 3050 50  0001 C CNN
+F 3 "~" H 5150 3050 50  0001 C CNN
+	1    5150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x09_Counter_Clockwise J_Tr1
+U 1 1 61756345
+P 2750 3250
+F 0 "J_Tr1" H 2800 3867 50  0000 C CNN
+F 1 "Transistor array" H 2800 3776 50  0000 C CNN
+F 2 "" H 2750 3250 50  0001 C CNN
+F 3 "~" H 2750 3250 50  0001 C CNN
+	1    2750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x15_Counter_Clockwise J_A1
+U 1 1 6175BB9C
+P 6050 5100
+F 0 "J_A1" H 6100 6017 50  0000 C CNN
+F 1 "Arduino" H 6100 5926 50  0000 C CNN
+F 2 "" H 6050 5100 50  0001 C CNN
+F 3 "~" H 6050 5100 50  0001 C CNN
+	1    6050 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 61764AF7
+P 6350 4700
+F 0 "#PWR0103" H 6350 4550 50  0001 C CNN
+F 1 "+5V" V 6365 4828 50  0000 L CNN
+F 2 "" H 6350 4700 50  0001 C CNN
+F 3 "" H 6350 4700 50  0001 C CNN
+	1    6350 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 4700 6250 4700
+$Comp
+L Connector_Generic:Conn_01x06 J_Tim1
+U 1 1 6176C6E1
+P 3550 5350
+F 0 "J_Tim1" H 3630 5342 50  0000 L CNN
+F 1 "RTC Module" H 3630 5251 50  0000 L CNN
+F 2 "" H 3550 5350 50  0001 C CNN
+F 3 "~" H 3550 5350 50  0001 C CNN
+	1    3550 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Counter_Clockwise J_R2
+U 1 1 61766857
+P 5150 1700
+F 0 "J_R2" H 5200 2217 50  0000 C CNN
+F 1 "Shift register" H 5200 2126 50  0000 C CNN
+F 2 "" H 5150 1700 50  0001 C CNN
+F 3 "~" H 5150 1700 50  0001 C CNN
+	1    5150 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2100 4900 2100
+Wire Wire Line
+	5450 1700 5650 1700
+$Comp
+L power:GND #PWR?
+U 1 1 61766E12
+P 5100 3600
+F 0 "#PWR?" H 5100 3350 50  0001 C CNN
+F 1 "GND" H 5105 3427 50  0000 C CNN
+F 2 "" H 5100 3600 50  0001 C CNN
+F 3 "" H 5100 3600 50  0001 C CNN
+	1    5100 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3450 4950 3600
+Wire Wire Line
+	4950 3600 5100 3600
+Wire Wire Line
+	5100 3600 5200 3600
+Wire Wire Line
+	5200 3000 5450 3000
+Wire Wire Line
+	5450 3000 5450 3050
+Wire Wire Line
+	5200 3000 5200 3600
+Connection ~ 5100 3600
+Wire Wire Line
+	6350 4500 6250 4500
+$Comp
+L power:GND #PWR0102
+U 1 1 61763F03
+P 6350 4500
+F 0 "#PWR0102" H 6350 4250 50  0001 C CNN
+F 1 "GND" V 6355 4372 50  0000 R CNN
+F 2 "" H 6350 4500 50  0001 C CNN
+F 3 "" H 6350 4500 50  0001 C CNN
+	1    6350 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 4700 5650 4700
+$Comp
+L power:GND #PWR0104
+U 1 1 6176B4C2
+P 5650 4700
+F 0 "#PWR0104" H 5650 4450 50  0001 C CNN
+F 1 "GND" V 5655 4572 50  0000 R CNN
+F 2 "" H 5650 4700 50  0001 C CNN
+F 3 "" H 5650 4700 50  0001 C CNN
+	1    5650 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 4800 5300 4800
+Wire Wire Line
+	5300 4800 5300 3650
+Wire Wire Line
+	5300 3650 5500 3650
+Wire Wire Line
+	5500 3650 5500 2950
+Wire Wire Line
+	5500 2950 5450 2950
+Wire Wire Line
+	5750 4900 5350 4900
+Wire Wire Line
+	5350 4900 5350 3600
+Wire Wire Line
+	5350 3600 5550 3600
+Wire Wire Line
+	5550 3600 5550 3150
+Wire Wire Line
+	5550 3150 5450 3150
+Wire Wire Line
+	5750 5000 5400 5000
+Wire Wire Line
+	5400 5000 5400 3550
+Wire Wire Line
+	5400 3550 5600 3550
+Wire Wire Line
+	5600 3550 5600 3250
+Wire Wire Line
+	5600 3250 5450 3250
+$Comp
+L power:+5V #PWR?
+U 1 1 6176DEEE
+P 5700 3350
+F 0 "#PWR?" H 5700 3200 50  0001 C CNN
+F 1 "+5V" V 5715 3478 50  0000 L CNN
+F 2 "" H 5700 3350 50  0001 C CNN
+F 3 "" H 5700 3350 50  0001 C CNN
+	1    5700 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 3350 5650 3350
+Wire Wire Line
+	5450 2750 5650 2750
+Wire Wire Line
+	5650 2750 5650 3350
+Connection ~ 5650 3350
+Wire Wire Line
+	5650 3350 5700 3350
+$Comp
+L power:+3V3 #PWR?
+U 1 1 617703D0
+P 6350 5700
+F 0 "#PWR?" H 6350 5550 50  0001 C CNN
+F 1 "+3V3" V 6365 5828 50  0000 L CNN
+F 2 "" H 6350 5700 50  0001 C CNN
+F 3 "" H 6350 5700 50  0001 C CNN
+	1    6350 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 5700 6350 5700
+$Comp
+L power:GNDREF #PWR?
+U 1 1 6177242B
+P 6350 5600
+F 0 "#PWR?" H 6350 5350 50  0001 C CNN
+F 1 "GNDREF" V 6355 5472 50  0000 R CNN
+F 2 "" H 6350 5600 50  0001 C CNN
+F 3 "" H 6350 5600 50  0001 C CNN
+	1    6350 5600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 5600 6350 5600
+$EndSCHEMATC
