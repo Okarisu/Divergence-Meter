@@ -20,16 +20,12 @@ int registerGridLatchPin;
 int registerGridClockPin;
 int registerGridDataPin;
 
-/*arrays with bytes to write through registers*/
 
 byte divergenceArray[8]; //array with elements to display numbers
 
-//array with elements to power itron grids; each array element represents one itron powered on
-byte divergenceGridArray[] = {B01111111, B10111111, B11011111, B11101111, B11110111, B11111011, B11111101, B11111110};
+int relayOutput; //pin with realy connected to switch ON/OFF itron power supply
 
-int divergenceArrayPosition = 0; //variable for array element selection
 
-int delayNumberChangeTime = 10; //delay in ms to switch between powering itrons
 
 void setup()
 {
@@ -42,20 +38,40 @@ void setup()
     pinMode(registerGridLatchPin, OUTPUT);
     pinMode(registerGridClockPin, OUTPUT);
     pinMode(registerGridDataPin, OUTPUT);
+
+    pinMode(relayOutput, OUTPUT);
 }
 
 void loop(){
-    if(divergence){
-        divergence();
-    } else if (!divergence){
-        getTime();
+
+
+    if (power){
+        digitalWrite(relayOutput, HIGH); //turn itron PS ON
+
+        if(divergence){
+            divergence();
+        } else if (!divergence){
+            getTime();
+        } 
+
+       display();
+
+    } else {
+        digitalWrite(relayOutput, LOW); //turn itron PS OFF
     }
 
-    display();
 }
 
 void display()
 {
+
+    //array with elements to power itron grids; each array element represents one itron powered on
+    byte divergenceGridArray[] = {B01111111, B10111111, B11011111, B11101111, B11110111, B11111011, B11111101, B11111110};
+
+    int divergenceArrayPosition = 0; //variable for array element selection
+
+    int delayDigitChangeTime = 10; //delay in ms to switch between powering itrons
+
 
     //cycle to go through all digits and display them 
     for (divergenceArrayPosition; divergenceArrayPosition < 8; divergenceArrayPosition++)
@@ -75,6 +91,6 @@ void display()
         digitalWrite(registerGridLatchPin, HIGH);
 
         //delay to get whole displaying process on certain frequency
-        delay(delayNumberChangeTime);
+        delay(delayDigitChangeTime);
     }
 }
