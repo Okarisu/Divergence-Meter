@@ -1,6 +1,6 @@
 // inicializace knihoven
 #include <Wire.h>
-//#include <DS3231.h>
+#include <DS3231.h>
 
 // nastavení pinů RTC modulu
 #define SCLpin A5;
