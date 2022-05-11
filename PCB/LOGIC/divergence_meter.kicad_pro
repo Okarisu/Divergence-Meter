@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 1.0,
+          "height": 1.7,
+          "width": 1.7
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -431,10 +431,6 @@
     [
       "9340c285-5767-42d5-8b6d-63fe2a40ddf3",
       ""
-    ],
-    [
-      "ca608982-c74e-4693-b4f6-f403d299d450",
-      "Top Board"
     ]
   ],
   "text_variables": {}
