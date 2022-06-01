@@ -1,10 +1,11 @@
 #include <Arduino.h>
 #include "define.h"
+#include "symbols.h"
 
 void Display(byte digitsToDisplay[8]) {
 
     //Pole k rozsvěcení jednotlivých trubic
-    byte gridsPowerOrder[8] = {B01111111, B10111111, B11011111, B11101111, B11110111, B11111011, B11111101, B11111110};
+    byte gridsPowerOrder[8] = {grid1, grid2, grid3, grid4, grid5, grid6, grid7, grid8};
 
     for (int currentDisplayPosition = 0; currentDisplayPosition < 8; currentDisplayPosition += 1) {
 
