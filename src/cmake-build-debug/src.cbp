@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="src"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\cmake\Platform\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nano_CORE">
+				<Option output="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/libnano_CORE.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 nano_CORE"/>
+					<CompileFile command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nano_CORE/fast">
+				<Option output="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/libnano_CORE.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 nano_CORE/fast"/>
+					<CompileFile command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nano_Wire">
+				<Option output="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/libnano_Wire.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 nano_Wire"/>
+					<CompileFile command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nano_Wire/fast">
+				<Option output="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/libnano_Wire.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 nano_Wire/fast"/>
+					<CompileFile command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nano_twi">
+				<Option output="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/libnano_twi.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 nano_twi"/>
+					<CompileFile command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nano_twi/fast">
+				<Option output="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/libnano_twi.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 nano_twi/fast"/>
+					<CompileFile command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="src">
+				<Option output="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/src.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 src"/>
+					<CompileFile command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="src/fast">
+				<Option output="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/src.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/twi/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 src/fast"/>
+					<CompileFile command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="src-size">
+				<Option working_dir="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 src-size"/>
+					<CompileFile command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Toohka/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Arduino.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/CDC.cpp">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Client.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial.cpp">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial0.cpp">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial1.cpp">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial2.cpp">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial3.cpp">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial_private.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/IPAddress.cpp">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/IPAddress.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/PluggableUSB.cpp">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/PluggableUSB.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Print.cpp">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Print.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Printable.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Server.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Stream.cpp">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Stream.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Tone.cpp">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/USBAPI.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/USBCore.cpp">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/USBCore.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/USBDesc.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Udp.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/WCharacter.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/WInterrupts.c">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/WMath.cpp">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/WString.cpp">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/WString.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/abi.cpp">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/binary.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/hooks.c">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/main.cpp">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/new.cpp">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/new.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring.c">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring_analog.c">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring_digital.c">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring_private.h">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring_pulse.c">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring_shift.c">
+			<Option target="nano_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/Wire.cpp">
+			<Option target="nano_Wire"/>
+			<Option target="nano_twi"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/Wire.h">
+			<Option target="nano_Wire"/>
+			<Option target="nano_twi"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/utility/twi.c">
+			<Option target="nano_Wire"/>
+			<Option target="nano_twi"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src/utility/twi.h">
+			<Option target="nano_Wire"/>
+			<Option target="nano_twi"/>
+		</Unit>
+		<Unit filename="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/src_src.ino.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug/src_src.ino.cpp.rule">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/initTime.ino">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/registr_test.ino">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/src.ino">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake/ArduinoToolchain.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake/Platform/Arduino.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

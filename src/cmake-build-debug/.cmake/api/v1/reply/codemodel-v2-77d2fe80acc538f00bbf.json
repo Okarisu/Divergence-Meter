@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "nano_CORE::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nano_CORE-Debug-fa23084e3b6959970a32.json",
+					"name" : "nano_CORE",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nano_Wire::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nano_Wire-Debug-ce9153cd2a2e6d8ae4af.json",
+					"name" : "nano_Wire",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nano_twi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nano_twi-Debug-3eee09f3bf1d3f008807.json",
+					"name" : "nano_twi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "src::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-src-Debug-4c15b9f88c409e42ca22.json",
+					"name" : "src",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "src-size::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-src-size-Debug-0a8c847fba2a75e4a047.json",
+					"name" : "src-size",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src/cmake-build-debug",
+		"source" : "C:/Users/Toohka/Documents/.DEV/Divergence-Meter/src"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
