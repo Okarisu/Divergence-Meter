@@ -1,31 +1,36 @@
 # Poznámky
 
-## TO DO list
+## TO DO
 
 - hodiny - DS3231
 - Divergence meter
 - řízení - ON/OFF switch (+relé pro itrony), víc switchů/bluetooth
 - mby piezzo - OST?
 
-## Parts
+## Tlačítka
+
+* On/Off
+* čas / divergence
+* scramble
+
+## Součástky
 
 - PCB
-- Arduino (Nano?)
-- posuvný registr
+- Arduino - Nano
 - Itrony
-- ta pakárna na řízení itronů
-- relé modul (774-028 or 774-022)
+- Tranzistor. pole
+- registry
+- relé modul (774-028 | 774-022)
 - čudlík(y)
 - ev. BT modul
-- ev. piezzo & SD karta + modul
-- nějaký pakárny nahoru, aby to vapadalo
+- ev. piezzo & SD modul + karta
 
 ## Poznámky od Franty
 
 - řádově pár mA - můžu použít ten svůj zdroj
-- problém display_array[]
 
 ## Nápady
 
-- switch pro enable/disable bluetooth
-- možnost vlastního čísla
+- bluetooth
+- switch - toggle bluetooth
+- piezzo - OST
