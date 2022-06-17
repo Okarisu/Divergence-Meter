@@ -14,7 +14,13 @@
 #define gridDataPin 5
 #define gridClockPin 6
 
+#define modeSwitch 7
+#define scrambleSwitch 8
+#define setSwitch 9
+
 //hodnoty
 #define displayCycleDelay 10
+#define pushLimit 25
+#define scrambleLength 8000
 
 #endif //SRC_PINOUT_H

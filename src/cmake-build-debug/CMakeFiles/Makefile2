@@ -162,8 +162,8 @@ CMakeFiles/nano_twi.dir/clean:
 # Target rules for target CMakeFiles/src.dir
 
 # All Build rule for target.
-CMakeFiles/src.dir/all: CMakeFiles/nano_twi.dir/all
 CMakeFiles/src.dir/all: CMakeFiles/nano_Wire.dir/all
+CMakeFiles/src.dir/all: CMakeFiles/nano_twi.dir/all
 CMakeFiles/src.dir/all: CMakeFiles/nano_CORE.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/build

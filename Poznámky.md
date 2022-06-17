@@ -9,9 +9,10 @@
 
 ## Tlačítka
 
-* On/Off
+* SWITCH
 * čas / divergence
 * scramble
+* Nastavení - zimní/letní čas
 
 ## Součástky
 
@@ -28,6 +29,8 @@
 ## Poznámky od Franty
 
 - řádově pár mA - můžu použít ten svůj zdroj
+- žhavení paralelně, měnič z 12V na 1,5V, aspoň 1-2A, měnič pro 30V, desítky mA, stabilizátor na 5V
+- Frantovy čudlíky - 2 na hýbání nastavení, 2 na in/dektementaci
 
 ## Nápady
 

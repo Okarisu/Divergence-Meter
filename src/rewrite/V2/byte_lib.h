@@ -1,9 +1,9 @@
 //
-// Created by Toohka on 01.06.2022.
+// Created by Toohka on 17.06.2022.
 //
 
-#ifndef SRC_DIGITS_H
-#define SRC_DIGITS_H
+#ifndef SRC_BYTE_LIB_H
+#define SRC_BYTE_LIB_H
 
 //DIGITS
 #define sym0 B00000011
@@ -31,4 +31,5 @@
 #define grid7 B11111101
 #define grid8 B11111110
 
-#endif //SRC_DIGITS_H
+
+#endif //SRC_BYTE_LIB_H
