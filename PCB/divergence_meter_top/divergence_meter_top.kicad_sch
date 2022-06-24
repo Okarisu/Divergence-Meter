@@ -366,42 +366,62 @@
         )
       )
     )
-    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (symbol "power:Earth" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (id 0) (at 0 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Value" "GND" (id 1) (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
+      (property "Value" "Earth" (id 1) (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
       )
       (property "Footprint" "" (id 2) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (id 4) (at 0 0 0)
+      (property "ki_keywords" "power-flag ground gnd" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (id 5) (at 0 0 0)
+      (property "ki_description" "Power symbol creates a global label with name \"Earth\"" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "GND_0_1"
+      (symbol "Earth_0_1"
         (polyline
           (pts
+            (xy -0.635 -1.905)
+            (xy 0.635 -1.905)
+          )
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -0.127 -2.54)
+            (xy 0.127 -2.54)
+          )
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 -1.27)
             (xy 0 0)
-            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+        (polyline
+          (pts
             (xy 1.27 -1.27)
-            (xy 0 -2.54)
             (xy -1.27 -1.27)
-            (xy 0 -1.27)
           )
           (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type none))
         )
       )
-      (symbol "GND_1_1"
+      (symbol "Earth_1_1"
         (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
+          (name "Earth" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -1822,6 +1842,24 @@
     (pin "1" (uuid 2f1bb28c-b2f2-4528-90d5-f3fa2f4df4cc))
   )
 
+  (symbol (lib_id "power:Earth") (at 53.34 148.59 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid c399aef9-3678-4747-9295-3eabdcc57d0c)
+    (property "Reference" "#PWR?" (id 0) (at 53.34 154.94 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Earth" (id 1) (at 53.34 152.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (id 2) (at 53.34 148.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 53.34 148.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 56185341-c702-4c71-bbfd-6bbdf2cbaaa3))
+  )
+
   (symbol (lib_id "itron_iv_6:itron_IV_6") (at 152.4 69.85 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid c673263c-ad3f-41fc-9390-265c5a6a6f7b)
@@ -1868,22 +1906,6 @@
     (pin "7" (uuid 43fce39d-e397-4218-a870-6e68ca7850bb))
     (pin "8" (uuid e682de9f-cfe4-4eb4-bf46-5f9ba649d8da))
     (pin "9" (uuid 5e9726ce-4d01-40c5-88cc-419709628a07))
-  )
-
-  (symbol (lib_id "power:GND") (at 53.34 148.59 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid e9d6d87a-0c45-42d5-b43b-38b2b19f6b19)
-    (property "Reference" "#PWR01" (id 0) (at 53.34 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (id 1) (at 53.34 153.67 0))
-    (property "Footprint" "" (id 2) (at 53.34 148.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 53.34 148.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7abe2317-3ddd-4753-8ced-0af5462f2b1c))
   )
 
   (symbol (lib_id "itron_iv_6:itron_IV_6") (at 152.4 133.35 0) (mirror x) (unit 1)
@@ -1933,9 +1955,6 @@
   )
 
   (symbol_instances
-    (path "/e9d6d87a-0c45-42d5-b43b-38b2b19f6b19"
-      (reference "#PWR01") (unit 1) (value "GND") (footprint "")
-    )
     (path "/b179022b-e294-47d5-9357-618f8dfa1093"
       (reference "#PWR0101") (unit 1) (value "GND1") (footprint "")
     )
@@ -1947,6 +1966,9 @@
     )
     (path "/01bb07b7-5eda-4da8-b61b-2d6248635b61"
       (reference "#PWR0104") (unit 1) (value "+1V5") (footprint "")
+    )
+    (path "/c399aef9-3678-4747-9295-3eabdcc57d0c"
+      (reference "#PWR?") (unit 1) (value "Earth") (footprint "")
     )
     (path "/959049d5-8131-4d90-90cb-f74b567fc392"
       (reference "H1") (unit 1) (value "MountingHole_Pad") (footprint "MountingHole:MountingHole_3.5mm_Pad_Via")
