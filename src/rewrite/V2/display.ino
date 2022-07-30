@@ -16,7 +16,6 @@ void Display(byte digitsToDisplay[]) {
         shiftOut(segmentDataPin, segmentClockPin, LSBFIRST, digitsToDisplay[currentDisplayPosition]);
         shiftOut(gridDataPin, gridClockPin, LSBFIRST, gridsPowerOrder[currentDisplayPosition]);
 
-
         digitalWrite(segmentLatchPin, HIGH);
         digitalWrite(gridLatchPin, HIGH);
 
