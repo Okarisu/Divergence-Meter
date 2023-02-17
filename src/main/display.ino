@@ -1,3 +1,4 @@
+#include 
 int digitChangeTimeDelay = 10; //čas v ms, po který budou jednotlivé itrony zobrazovat číslice
 
 byte display_array[8]; //pole obsahující číslice k zápisu do registu segmentů a následnému zobrazení
